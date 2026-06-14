@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/header_height"
+        android:background="@color/red"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back"
+            app:tint="@color/white"
+            android:contentDescription="@string/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_profile"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_person"
+                    android:background="@drawable/bg_circle_red_soft"
+                    android:padding="2dp"
+                    app:civ_border_color="@color/red"
+                    app:civ_border_width="2dp"
+                    android:contentDescription="@string/nav_profile" />
+
+                <ImageView
+                    android:id="@+id/btnChangePhoto"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="bottom|end"
+                    android:background="@drawable/bg_circle_red"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_camera"
+                    app:tint="@color/white"
+                    android:contentDescription="Change photo" />
+            </FrameLayout>
+
+            <TextView style="@style/FieldLabel" android:text="@string/hint_full_name" />
+            <EditText android:id="@+id/etName" style="@style/FieldInput"
+                android:inputType="textPersonName|textCapWords" android:autofillHints="name" />
+
+            <TextView style="@style/FieldLabel" android:text="Goal" />
+            <EditText android:id="@+id/etGoal" style="@style/FieldInput"
+                android:hint="e.g. Build Muscle" android:inputType="text" android:autofillHints="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:layout_marginEnd="8dp" android:orientation="vertical">
+                    <TextView style="@style/FieldLabel" android:text="Weight (kg)" />
+                    <EditText android:id="@+id/etWeight" style="@style/FieldInput"
+                        android:inputType="numberDecimal" android:autofillHints="" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:layout_marginStart="8dp" android:orientation="vertical">
+                    <TextView style="@style/FieldLabel" android:text="Height (cm)" />
+                    <EditText android:id="@+id/etHeight" style="@style/FieldInput"
+                        android:inputType="numberDecimal" android:autofillHints="" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginTop="28dp"
+                android:text="@string/save_changes"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/red"
+                app:cornerRadius="15dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:indeterminateTint="@color/red"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

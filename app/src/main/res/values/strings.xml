@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">FASTFit</string>
+    <string name="onboarding_screen">Onboarding Screen</string>
+    <string name="welcome_title">Welcome to FASTFit!</string>
+    <string name="welcome_subtitle">Your Smart Gym Companion</string>
+    <string name="onboarding_instruction_1">🏋️ Choose from machine-based workouts</string>
+    <string name="onboarding_instruction_2">📅 Book your preferred training slot</string>
+    <string name="onboarding_instruction_3">🥗 Plan your nutrition for optimal results</string>
+    <string name="onboarding_instruction_4">📊 Review your complete workout summary</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="workout_list_title">Select a Workout</string>
+    <string name="leg_press">Leg Press</string>
+    <string name="lat_pulldown">Lat Pulldown</string>
+    <string name="chest_press">Chest Press</string>
+    <string name="leg_press_info">4 Sets × 12 Reps | 45 min</string>
+    <string name="lat_pulldown_info">3 Sets × 10 Reps | 30 min</string>
+    <string name="chest_press_info">4 Sets × 8 Reps | 40 min</string>
+    <string name="book_slot">BOOK SLOT</string>
+    <string name="watch_tutorial">WATCH TUTORIAL</string>
+    <string name="slot_booking_title">Book Your Slot</string>
+    <string name="morning_slot">🌅 Morning\n6:00 AM – 9:00 AM</string>
+    <string name="afternoon_slot">☀️ Afternoon\n12:00 PM – 3:00 PM</string>
+    <string name="evening_slot">🌙 Evening\n5:00 PM – 8:00 PM</string>
+    <string name="proceed_to_nutrition">PROCEED TO NUTRITION</string>
+    <string name="confirm_workout">CONFIRM WORKOUT</string>
+    <string name="nutrition_title">Nutrition Plan</string>
+    <string name="protein_shake">Protein Shake</string>
+    <string name="energy_bar">Energy Bar</string>
+    <string name="salad">Salad</string>
+    <string name="juice">Juice</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="summary_title">Workout Summary</string>
+    <string name="send_plan">SEND PLAN</string>
+    <string name="send_sms">SEND SMS</string>
+    <string name="fastfit_logo">FASTFit Logo</string>
+    <string name="fastfit">FASTFit</string>
+    <string name="tagline">Plan your workout routine and book gym slots to \n reserve your spot. Stay fit, stay strong!</string>
+
+    <!-- ===== Auth ===== -->
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="create_account">Create Account</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in_subtitle">Sign in to continue your fitness journey</string>
+    <string name="sign_up_subtitle">Join FASTFit and start training smarter</string>
+    <string name="hint_full_name">Full name</string>
+    <string name="hint_email">Email address</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="forgot_password_title">Reset Password</string>
+    <string name="forgot_password_subtitle">Enter your email and we\'ll send you a reset link</string>
+    <string name="send_reset_link">SEND RESET LINK</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="no_account">Don\'t have an account? </string>
+    <string name="have_account">Already have an account? </string>
+    <string name="or">OR</string>
+    <string name="back">Back</string>
+
+    <!-- ===== Home / Nav ===== -->
+    <string name="nav_home">Home</string>
+    <string name="nav_workouts">Workouts</string>
+    <string name="nav_progress">Progress</string>
+    <string name="nav_profile">Profile</string>
+    <string name="greeting_morning">Good morning</string>
+    <string name="greeting_afternoon">Good afternoon</string>
+    <string name="greeting_evening">Good evening</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="featured_workouts">Featured Workouts</string>
+    <string name="upcoming_bookings">Upcoming Bookings</string>
+    <string name="view_all">View all</string>
+    <string name="no_bookings_yet">No bookings yet. Book your first session!</string>
+
+    <!-- ===== Profile / Settings ===== -->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="log_out">Log Out</string>
+    <string name="save_changes">SAVE CHANGES</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="push_notifications">Push notifications</string>
+    <string name="account">Account</string>
+    <string name="preferences">Preferences</string>
+
+    <!-- ===== Progress ===== -->
+    <string name="log_workout">Log Workout</string>
+    <string name="add_weight">Add Weight</string>
+    <string name="weekly_activity">Weekly Activity</string>
+    <string name="total_workouts">Workouts</string>
+    <string name="total_minutes">Minutes</string>
+    <string name="current_streak">Day Streak</string>
+
+    <!-- ===== Misc ===== -->
+    <string name="exercise_detail">Exercise Detail</string>
+    <string name="loading">Loading…</string>
+    <string name="retry">Retry</string>
+    <string name="something_went_wrong">Something went wrong. Please try again.</string>
+    <string name="default_notification_channel_id">fastfit_default</string>
+    <string name="default_notification_channel_name">FASTFit Notifications</string>
+</resources>

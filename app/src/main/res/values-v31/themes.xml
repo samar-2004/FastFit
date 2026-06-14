@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom theme for Android 12+ (API 31) to suppress the system splash screen -->
+    <style name="Theme.FastFit" parent="Base.Theme.FastFit">
+        <!-- Make the system splash icon transparent -->
+        <item name="android:windowSplashScreenAnimatedIcon">@android:color/transparent</item>
+        
+        <!-- Use your custom splash background (e.g., dark_gradient) -->
+        <item name="android:windowSplashScreenBackground">@drawable/dark_gradient</item>
+        
+        <!-- Re-enable standard behavior after the splash -->
+        <item name="android:windowSplashScreenBehavior">icon_preferred</item>
+    </style>
+</resources>

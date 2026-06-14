@@ -1,0 +1,23 @@
+# Gradle / build output
+.gradle/
+build/
+/captures
+.externalNativeBuild
+.cxx
+
+# Android Studio / IntelliJ
+*.iml
+/.idea/
+.DS_Store
+
+# Local SDK / machine-specific config
+local.properties
+
+# Firebase config (contains your project keys) - each developer provides their own.
+# See FIREBASE_SETUP.md and app/google-services.json.example
+google-services.json
+
+# Signing material - never commit these
+*.jks
+*.keystore
+key.properties

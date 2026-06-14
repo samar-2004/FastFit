@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/header_height"
+        android:background="@color/red"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back"
+            app:tint="@color/white"
+            android:contentDescription="@string/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView style="@style/SectionLabel" android:text="@string/preferences" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_white"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/ProfileRow" android:id="@+id/rowDarkMode">
+                    <ImageView style="@style/ProfileRowIcon" android:src="@drawable/ic_moon" />
+                    <TextView style="@style/ProfileRowText" android:text="@string/dark_mode" />
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchDarkMode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:thumbTint="@color/white"
+                        app:trackTint="@color/red" />
+                </LinearLayout>
+
+                <View style="@style/ProfileDivider" />
+
+                <LinearLayout style="@style/ProfileRow" android:id="@+id/rowNotifications">
+                    <ImageView style="@style/ProfileRowIcon" android:src="@drawable/ic_notifications" />
+                    <TextView style="@style/ProfileRowText" android:text="@string/push_notifications" />
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchNotifications"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:thumbTint="@color/white"
+                        app:trackTint="@color/red" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView style="@style/SectionLabel" android:text="@string/account" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_white"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/ProfileRow" android:id="@+id/rowChangePassword">
+                    <ImageView style="@style/ProfileRowIcon" android:src="@drawable/ic_lock" app:tint="@color/red" />
+                    <TextView style="@style/ProfileRowText" android:text="Change password" />
+                    <ImageView style="@style/ProfileRowChevron" android:src="@drawable/ic_chevron_right" />
+                </LinearLayout>
+
+                <View style="@style/ProfileDivider" />
+
+                <LinearLayout style="@style/ProfileRow" android:id="@+id/rowAbout">
+                    <ImageView style="@style/ProfileRowIcon" android:src="@drawable/ic_info" />
+                    <TextView style="@style/ProfileRowText" android:text="@string/about" />
+                    <ImageView style="@style/ProfileRowChevron" android:src="@drawable/ic_chevron_right" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginTop="24dp"
+                android:text="@string/log_out"
+                android:textColor="@color/red"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/surface"
+                app:cornerRadius="15dp"
+                app:icon="@drawable/ic_logout"
+                app:iconGravity="textStart"
+                app:iconTint="@color/red"
+                app:strokeColor="@color/red"
+                app:strokeWidth="1dp"
+                style="@style/Widget.Material3.Button.OutlinedButton" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

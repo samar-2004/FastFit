@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="14dp"
+    android:background="@drawable/workout_card_bg"
+    android:clipToOutline="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/imgWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_grey"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/featured_workouts" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_play_circle"
+            app:tint="@color/white"
+            android:contentDescription="@string/watch_tutorial" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvWorkoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="12dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="Leg Press"
+        android:textColor="@color/text_primary"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvWorkoutInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="12dp"
+        android:paddingBottom="12dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="45 min • 320 kcal"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp" />
+</LinearLayout>
